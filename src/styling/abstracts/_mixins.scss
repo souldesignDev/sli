@@ -1,0 +1,25 @@
+@mixin transition($x...){
+	-webkit-transition: $x;
+	-moz-transition: $x;
+	-ms-transition: $x;
+	-o-transition: $x;
+	transition: $x;
+}
+@mixin axis-x-Absolute { position: absolute; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%) }
+@mixin unset-axis-x-Absolute { position: relative; left: unset; -webkit-transform: unset; transform: unset; }
+@mixin axis-y-Absolute { position: absolute;  -webkit-transform: translateY(-50%); top: 50%; transform: translateY(-50%); }
+@mixin allAbsolute { position: absolute;  -webkit-transform: translate(-50%, -50%); top: 50%; left: 50%; transform: translate(-50%, -50%);  }
+@mixin hasBorder($color, $borderHeight, $margin-bottom: 0px, $transition-time: 0.6s) {
+	position: relative;
+	:after { content: ''; width: 0; height: $borderHeight; background-color: $color; @include transition(width $transition-time ease-in-out); position: absolute; bottom: $margin-bottom; left: 0; }
+	&:hover {
+		.title::after { width: 100%; }
+	}
+}
+@mixin hasBorderProductBox($color, $borderHeight, $margin-bottom: 0px, $transition-time: 0.6s) {
+	position: relative;
+	:after { content: ''; width: 0; height: $borderHeight; background-color: $color; @include transition(width $transition-time ease-in-out); position: absolute; bottom: $margin-bottom; left: 0; }
+	&:hover {
+		.title::after { width: 100%; }
+	}
+}

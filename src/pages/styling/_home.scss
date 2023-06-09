@@ -1,0 +1,27 @@
+@use '../../styling/abstracts/' as *;
+.home-container { margin-top: -160px; 
+    @media only screen and ( max-width: 1024px ) {
+		margin-top: -120px;
+	}
+	@media only screen and ( max-width: 680px ) {
+		margin-top: -112px;
+	}
+    .bannerWithText-container {  
+        .container {
+            .left-banner { order: 2; }
+            .right-banner { order: 1; }
+        }
+    }
+    > .message-container {
+        .container >.title-container { max-width: 200px; margin: 0 auto var(--icSMedium);
+            .title { @extend .f500; font-size: 14px; line-height: 16px; color: $black; text-transform: uppercase; }
+        }
+        .message {  max-width: 850px; margin: 0 auto; color: $black; 
+            h2 { @extend .f400; }
+        }
+        &.first { padding: var(--bcLarge) 0 var(--icXLarge); }
+        &.second { padding: var(--icXLarge) 0;
+            .button-container { padding-top: var(--icXLarge); }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+
+@use '../../../styling/abstracts/' as *;
+  .floss-home-container { height: 100vh;
+    > .center-container { background-color: $mint; border-radius: 0; margin: 0 auto; padding: 0; height: 100%; position: relative; width: 100%;
+        .container { padding: calc(0.25 * 80vh) 0 290px; position: relative;
+            .title-container {  max-width: 750px; margin: 0 auto var(--icLarge); 
+                .title { @extend .f500; font-size: 80px; line-height: 80px; color: $black; }
+            }
+            
+        }
+        .floss { @include axis-x-Absolute; bottom: 0; width: 380px; aspect-ratio: 1.4; line-height: 0;
+            img { }
+            video { width: 100%; height: 100%; }
+
+        }
+    }
+  }
+@media only screen and ( max-width: 1920px ) {
+    .floss-home-container {
+        > .center-container { box-sizing: border-box; padding: 0; margin: 0 auto; 
+            .container { 
+                .title-container {  
+                    .title { font-size: 64px; line-height: 64px; }
+                }
+            }
+        }
+    }
+}      
+@media only screen and ( max-width: 1024px ) {
+    .floss-home-container { height: calc(100vh - 64px); z-index: 9; position: relative;
+        > .center-container { 
+            .container { 
+                .title-container {  
+                    .title { font-size: 52px; line-height: 52px; }
+                }
+            }
+            .floss { width: 300px; }
+        }
+    }
+}
+@media only screen and ( max-width: 640px ) {
+    .floss-home-container {
+        > .center-container { 
+            .container { 
+                .title-container {  
+                    .title { font-size: 48px; line-height: 48px; }
+                }
+            }
+            .floss { width: 300px; }
+        }
+    }
+}
+

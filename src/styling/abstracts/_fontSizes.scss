@@ -1,0 +1,35 @@
+@use './mixins' as *;
+body { font-size: 20px; line-height: 130%; @include transition(all 0.4s ease-in-out);
+	.f400 { font-family: SweetSansProRegular; @include transition(all 0.4s ease-in-out); }
+	.f500 { font-family: SweetSansProMedium; @include transition(all 0.4s ease-in-out); }
+	h1 { font-size: 64px; line-height: 120%; @include transition(all 0.4s ease-in-out); }
+	h2 { font-size: 48px; line-height: 120%; @include transition(all 0.4s ease-in-out); }
+	h3 { font-size: 32px; line-height: 130%; @include transition(all 0.4s ease-in-out); }
+	h4 { font-size: 16px; line-height: 130%; @include transition(all 0.4s ease-in-out); }
+	.big { font-size: 24px; line-height: 130%; @include transition(all 0.4s ease-in-out); }
+	.medium { font-size: 20px; line-height: 130%; @include transition(all 0.4s ease-in-out); }
+	.small { font-size: 16px; line-height: 130%; @include transition(all 0.4s ease-in-out); }
+}
+@media only screen and ( max-width: 1024px ) {
+	body { font-size: 18px; line-height: 130%;
+		h1 { font-size: 56px; line-height: 100% }
+		h2 { font-size: 32px; line-height: 100% }
+		h3 { font-size: 24px; line-height: 120%; }
+		h4 { font-size: 16px; line-height: 120%; }
+		.big { font-size: 18px; line-height: 120%; }
+		.medium { font-size: 16px; line-height: 120%; }
+		.small { font-size: 14px; line-height: 130%; }
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	body { font-size: 16px; line-height: 130%      ;
+		h1 { font-size: 32px; line-height: 120% }
+		h2 { font-size: 24px; line-height: 120% }
+		h3 { font-size: 20px; line-height: 120%; }
+		h4 { font-size: 14px; line-height: 120%; }
+		.big { font-size: 18px; line-height: 120%; }
+		.medium { font-size: 16px; line-height: 120%; }
+		.small { font-size: 14px; line-height: 130%; }
+	}
+}

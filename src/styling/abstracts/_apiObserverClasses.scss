@@ -1,0 +1,41 @@
+.is-visibleTitle{ animation: forwards elementStyling 1.1s ease-in-out; }
+.is-visibleElement{ animation: forwards elementStyling 0.8s ease-in-out; 
+  &.delay1 { animation-delay: 0.1s;}
+  &.delay2 { animation-delay: 0.2s; }
+  &.delay3 { animation-delay: 0.3s; }
+  &.delay4 { animation-delay: 0.4s; }
+  &.delay5 { animation-delay: 0.5s; }
+  &.delay6 { animation-delay: 0.6s; }
+}
+.observeElement { opacity: 0; }
+.observeElement{ opacity: 0; }
+@keyframes textStyling {
+    0% {
+      transform: matrix3d(0.973504, -0.00191571, 0, 2.26408e-05, 0.042916, 0.518963, 0, 8.22145e-05, 0, 0, 1, 0, 0, 0, 0 , 1) translateY(200px);
+      transform-origin: center;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0;
+    }
+    100% {
+      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1) translateY(0);
+      transform-origin: center;
+      opacity: 1;
+    }
+  }
+
+  @keyframes elementStyling {
+    0%{
+      opacity: 0;
+      transform: perspective(500px) translateZ(-20px);
+    }
+    100%{
+      opacity: 1;
+      transform: perspective(500px) translateZ(0);
+    }
+    
+  }
+  
+  
+  

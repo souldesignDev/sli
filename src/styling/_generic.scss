@@ -1,0 +1,179 @@
+@use './abstracts/' as *;
+@use '../components/styling/' as *;
+@use '../pages/styling/' as *;
+body {
+	margin: 0;
+	font-family: SweetSansProRegular;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+
+//Some basic styling
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary, 
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+a {
+    text-decoration: none; 
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+// .radio-button { padding-left: 32px; position: relative;
+// 	&.checked {
+// 		&:before { background-color: $primary; border: none; width: 21px; height: 21px; }
+// 		&:after { position: absolute; content: url('../images/svg/whiteTick.svg'); left: 4px; top:-2px;  }
+// 	}
+// 	&:before { position: absolute; content: ""; left: 0; width: 19px; height: 19px; border-radius: 50%; border: 2px solid $cool_gray; }
+// }
+input[type="radio"] {
+	/* Add if not using autoprefixer */
+	-webkit-appearance: none;
+	appearance: none;
+	/* For iOS < 15 to remove gradient background */
+	background-color: #fff;
+	/* Not removed via appearance */
+}
+.no-scroll { overflow-y: hidden; }
+body { background-color: $white;  scroll-behavior: smooth; overflow-x: hidden;}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+.hidden { display: none;}
+input, textarea  { font-size: unset; font-family: unset; }
+.center-container { width: 1920px; margin: 0 auto; }
+.fullImage {
+	width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+#main-content { min-height: 500px; position: relative; padding-top: 160px; 
+
+	&.Loaded { animation: slideInFromRightCssTransition 0.4s ease-in-out; }
+	@media only screen and ( max-width: 1024px ) {
+		padding-top: 120px;
+	}
+	@media only screen and ( max-width: 680px ) {
+		padding-top: 112px;
+	}
+}
+.disabled { pointer-events: none;}
+@media only screen and ( max-width: 1920px ) {
+	.center-container { width: 100%; box-sizing: border-box; padding: 0 56px; margin: 0; }
+}
+.full-image-container { padding: var(--icXLarge) 0;
+	.lazy-load-image-background { width: 100%; height: 100%; 
+		img { max-width: unset; width: 100%; height: 100%;  }
+	}
+}
+img { display: block;  max-width: 100%; }
+.opacity0 { opacity: 0; cursor:default;}
+// .tr {
+// 	&:before { position: absolute; left: 0; top: 0; height: 100%; width: 0; content:url('../images/svg/toothpaste.svg'); }
+// 	&:after { position: absolute; right: 0; top: 0; width: 60px; content:url('../images/svg/toothbrush.svg'); opacity: 0; }
+// 	&.brush {
+// 		&:before { animation: forwards brushTeeth 2s ease-in-out;  }
+// 		&:after { animation: forwards moveToothbrush 1.75s 0.50s ease-in-out; }
+// 	}
+// }
+.tr { overflow: hidden;
+	&.brush  { animation: forwards toVisible 1s ease-in-out; }
+}
+.isMobile { 
+	.center-container { padding: 0 16px; }
+}
+@keyframes brushTeeth {
+	0% {
+	  width: 0;
+	   
+	}
+	25% {
+	  width: 100%; 
+	}
+	100% {
+	  width: 0;
+	  
+	}
+  }
+@keyframes moveToothbrush {
+	0% {
+	  right: 0; 
+	  opacity:1;
+	   
+	}
+	5%{
+		top:10px;
+	}
+	10%{
+		top:0px;
+	}
+	20%{
+		top:10px;
+	}
+	30%{
+		top:0px;
+	}
+	40%{
+		top:10px;
+	}
+	50%{
+		top:0px;
+	}
+	60%{
+		top:10px;
+	}
+	70%{
+		top:0px;
+	}
+	100% {
+	  right: 100%;
+	}
+  }
+
+@keyframes hideDownComeUp {
+	0% {
+	  transform: translateY(0);
+	}
+	49% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+		transform: translateY(100%);
+	}
+	51% {
+		opacity:1;
+		transform: translateY(-100%);
+	}
+	100% {
+		opacity:1;
+	  transform: translateY(0);
+	}
+  }
+
+
+
