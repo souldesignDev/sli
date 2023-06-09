@@ -1,44 +1,35 @@
-:root { 
+:root {
 	--400: 'SweetSansProRegular';
 	--500: 'SweetSansProMedium';
-	--bcLarge: 112px; 
+	--bcLarge: 160px;
+	--icLarge: 128px;
 	--bcMedium: 80px;
- 
-	--icXXSmall: 8px;
-	--icXSmall: 16px; 
+	--icSMedium: 40px;
 	--icSmall: 24px;
-	--icSMedium: 32px;
-	--icLarge: 40px;
-	--icXLarge: 56px;
-	--icXXLarge: 64px;
-
+	--icXSmall: 16px;
+	--icXXSmall: 8px;
 }
-@media only screen and ( max-width: 1024px ) {
-	:root {
-		--bcLarge: 88px; 
-		--bcMedium: 64px;
 
-		--icXXSmall: 8px;
+@media only screen and (max-width: 1024px) {
+	:root {
+		--bcLarge: 128px;
+		--icLarge: 96px;
+		--bcMedium: 64px;
+		--icSMedium: 32px;
+		--icSmall: 24px;
 		--icXSmall: 16px;
-		--icSmall: 16px;
-		--icSMedium: 24px;
-		--icLarge: 32px;
-		--icXLarge: 40px;
-		--icXXLarge: 56px;
+		--icXXSmall: 8px;
 	}
 }
 
 @media only screen and (max-width: 640px) {
 	:root {
-		--bcLarge: 72px; 
-		--bcMedium: 56px;
-
+		--bcLarge: 96px;
+		--icLarge: 72px;
+		--bcMedium: 40px;
+		--icSMedium: 24px;
+		--icSmall: 24px;
+		--icXSmall: 16px;
 		--icXXSmall: 8px;
-		--icXSmall: 8px;
-		--icSmall: 16px;
-		--icSMedium: 16px; 
-		--icLarge: 24px;
-		--icXLarge: 32px;
-		--icXXLarge: 40px;
 	}
 }
