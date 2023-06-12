@@ -1,12 +1,24 @@
 @font-face {
-	font-family: "SweetSansProRegular";
-	src: local("SweetSansProRegular"),
-	url("../../fonts/SweetSansProRegular.otf") format("truetype");
-	font-weight: 400;
+	font-family: "ArtexExtendedBlack";
+	src: local("ArtexExtendedBlack"),
+	url("../../fonts/ArtexExtendedBlack.woff") format("truetype"),
+	url("../../fonts/ArtexExtendedBlack.woff2") format("truetype");
   }
   @font-face {
-	font-family: "SweetSansProMedium";
-	src: local("SweetSansProMedium"),
-	url("../../fonts/SweetSansProMedium.otf") format("truetype");
-	font-weight: 500;
+	font-family: "ArtexExtendedRegular";
+	src: local("ArtexExtendedRegular"),
+	url("../../fonts/ArtexExtendedRegular.woff") format("truetype"),
+	url("../../fonts/ArtexExtendedRegular.woff2") format("truetype");
+  }
+  @font-face {
+	font-family: "AvanttBold";
+	src: local("AvanttBold"),
+	url("../../fonts/AvanttBold.woff") format("truetype"),
+	url("../../fonts/AvanttBold.woff2") format("truetype");
+  }
+  @font-face {
+	font-family: "AvanttRegular";
+	src: local("AvanttRegular"),
+	url("../../fonts/AvanttRegular.woff") format("truetype"),
+	url("../../fonts/AvanttRegular.woff2") format("truetype");
   }

@@ -4,8 +4,6 @@ import { BrowserRouter } from 'react-router-dom';
 import './styling/_generic.scss';
 import App from './App.js';
 import reportWebVitals from './reportWebVitals';
-import './fonts/SweetSansProMedium.otf';
-import './fonts/SweetSansProRegular.otf';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

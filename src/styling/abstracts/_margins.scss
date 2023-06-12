@@ -1,10 +1,9 @@
 :root {
-	--400: 'SweetSansProRegular';
-	--500: 'SweetSansProMedium';
 	--bcLarge: 160px;
 	--icLarge: 128px;
 	--bcMedium: 80px;
 	--icSMedium: 40px;
+	--icsMedium1: 32px;
 	--icSmall: 24px;
 	--icXSmall: 16px;
 	--icXXSmall: 8px;
@@ -16,18 +15,20 @@
 		--icLarge: 96px;
 		--bcMedium: 64px;
 		--icSMedium: 32px;
+		--icsMedium1: 24px;
 		--icSmall: 24px;
 		--icXSmall: 16px;
 		--icXXSmall: 8px;
 	}
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 760px) {
 	:root {
 		--bcLarge: 96px;
 		--icLarge: 72px;
 		--bcMedium: 40px;
 		--icSMedium: 24px;
+		--icsMedium1: 24px;
 		--icSmall: 24px;
 		--icXSmall: 16px;
 		--icXXSmall: 8px;

@@ -3,7 +3,7 @@
 @use '../pages/styling/' as *;
 body {
 	margin: 0;
-	font-family: SweetSansProRegular;
+	
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
   }
@@ -51,7 +51,7 @@ input[type="radio"] {
 	/* Not removed via appearance */
 }
 .no-scroll { overflow-y: hidden; }
-body { background-color: $white;  scroll-behavior: smooth; overflow-x: hidden;}
+body { background-color: $blue;  scroll-behavior: smooth; overflow-x: hidden;}
 ol, ul {
 	list-style: none;
 }

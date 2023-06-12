@@ -14,10 +14,10 @@
     }
     > .message-container {
         .container >.title-container { max-width: 200px; margin: 0 auto var(--icSMedium);
-            .title { @extend .f500; font-size: 14px; line-height: 16px; color: $black; text-transform: uppercase; }
+            .title {  font-size: 14px; line-height: 16px; color: $black; text-transform: uppercase; }
         }
         .message {  max-width: 850px; margin: 0 auto; color: $black; 
-            h2 { @extend .f400; }
+            h2 {  }
         }
         &.first { padding: var(--bcLarge) 0 var(--icXLarge); }
         &.second { padding: var(--icXLarge) 0;

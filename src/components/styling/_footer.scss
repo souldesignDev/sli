@@ -4,13 +4,13 @@
         .first { margin-top: var(--bcMedium); display: flex; padding-top: var(--icXSmall); border-style: dashed; background-image: linear-gradient(to right, #333 10%, rgba(255, 255, 255, 0) 0%); background-position: top; background-size: 10px 1px; background-repeat: repeat-x;
             .column-list:not(.social-container) { width: 16.66%; display: flex; flex-direction: column; text-align: left;
                 .title { 
-                    a { @extend .f500; color: $black; font-size: 14px; line-height: 16px; background-image: linear-gradient( to right, $black, $black 50%, $black 50% ); background-size: 200% 100%; background-position: -100%; display: inline-block; position: relative; -webkit-background-clip: text; -webkit-text-fill-color: transparent; @include transition(all 0.4s ease-in-out); 
+                    a {  color: $black; font-size: 14px; line-height: 16px; background-image: linear-gradient( to right, $black, $black 50%, $black 50% ); background-size: 200% 100%; background-position: -100%; display: inline-block; position: relative; -webkit-background-clip: text; -webkit-text-fill-color: transparent; @include transition(all 0.4s ease-in-out); 
                         &:before { content: ''; background: $black; display: block; position: absolute; bottom: -1px; left: 0; width: 0; height: 2px; @include transition(all 0.4s ease-in-out);  }
                         &:hover { background-position: 0; 
                             &:before { width: 100%; }
                         }
                     }
-                    span { @extend .f500; color: $black; font-size: 14px; line-height: 16px; }
+                    span {  color: $black; font-size: 14px; line-height: 16px; }
                 }
             }
             .social-container { display: flex; flex-direction: row; margin-left: auto; 
@@ -27,13 +27,13 @@
             .column-list { width: 16.66%; display: flex; flex-direction: column; text-align: left;
                 &.soul { text-align: right; }
                 .title { 
-                    a, .not-a { @extend .f500; color: $black; font-size: 14px; line-height: 16px; background-image: linear-gradient( to right, $black, $black 50%, $black 50% ); background-size: 200% 100%; background-position: -100%; display: inline-block; position: relative; -webkit-background-clip: text; -webkit-text-fill-color: transparent; @include transition(all 0.4s ease-in-out); 
+                    a, .not-a {  color: $black; font-size: 14px; line-height: 16px; background-image: linear-gradient( to right, $black, $black 50%, $black 50% ); background-size: 200% 100%; background-position: -100%; display: inline-block; position: relative; -webkit-background-clip: text; -webkit-text-fill-color: transparent; @include transition(all 0.4s ease-in-out); 
                         &:before { content: ''; background: $black; display: block; position: absolute; bottom: -1px; left: 0; width: 0; height: 2px; @include transition(all 0.4s ease-in-out);  }
                         &:hover { background-position: 0; 
                             &:before { width: 100%; }
                         }
                     }
-                    span { @extend .f500; color: $black; font-size: 14px; line-height: 16px; }
+                    span {  color: $black; font-size: 14px; line-height: 16px; }
                 }
             }
         }
@@ -59,7 +59,7 @@
                     &:nth-child(3) { 
                         a { margin-bottom: var(--icXLarge); }
                     }
-                    .title a { color: $gray-dark; background-image: linear-gradient( to right, $black, $black 50%, $gray-dark 50% ); margin-bottom: var(--icSmall); }
+                    .title a { color: $darkgray; background-image: linear-gradient( to right, $black, $black 50%, $darkgray 50% ); margin-bottom: var(--icSmall); }
                 }
             }
         }
